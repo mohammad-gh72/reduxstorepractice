@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+  --title-fontsize: 18px;
+  --menue-fontsize: 16px;
+  --products-fontsize: 14px;
+}
+.dark {
+  color: rgb(245, 242, 242);
+  background-color: rgb(43, 42, 42);
+  --primary-color: rgb(231, 228, 228);
+  --secondary-color: rgb(29, 28, 28);
+  --accent-color: rgb(47, 54, 56);
+}
+
+.light {
+  color: rgb(37, 36, 36);
+  background-color: rgb(255, 253, 253);
+  --primary-color: rgb(36, 36, 36);
+  --secondary-color: rgb(250, 249, 249);
+  --accent-color: rgba(247, 238, 243, 0.534);
+}
+
+@layer components {
+  .align-element {
+    @apply mx-auto max-w-6xl px-8;
+  }
+}
